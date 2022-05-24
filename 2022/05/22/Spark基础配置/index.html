@@ -17,11 +17,14 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="一、安装配置 jdk 编译环境软件安装目录 1mkdir -pv &#x2F;export&#x2F;server JDK 1.8安装  rz上传并解压 jdk-8u241-linux-x64.tar.gz到&#x2F;export&#x2F;server&#x2F;目录下 1tar -zxvf jdk-8u241-linux-x64.tar.gz -C &#x2F;export&#x2F;server">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-05-22T05:56:24.678Z">
-<meta property="article:modified_time" content="2022-05-23T04:31:10.580Z">
+<meta property="og:image" content="https://1932273119.github.io/2022/05/22/Spark%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/1653204520069.png">
+<meta property="og:image" content="https://1932273119.github.io/2022/05/22/Spark%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/1653204766544.png">
+<meta property="article:published_time" content="2022-05-22T02:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-24T04:07:38.950Z">
 <meta property="article:author" content="Wang yf">
-<meta property="article:tag" content="Wang yf_技术博客">
+<meta property="article:tag" content="Spark基础配置">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://1932273119.github.io/2022/05/22/Spark%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/1653204520069.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -216,7 +219,7 @@
         </span>
 
 <a href="/2022/05/22/Spark%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/" class="archive-article-date">
-        <time datetime="2022-05-22T05:56:24.678Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-22</time>
+        <time datetime="2022-05-22T02:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-22</time>
 </a>
 
   
@@ -351,9 +354,15 @@
 <li><p>WEB页面</p>
 </li>
 <li><p>HDFS集群：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://node1:9870/</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://node1:9870/</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/05/22/Spark%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/1653204520069.png"></p>
+</li>
 <li><p>YARN集群：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://node1:8088/</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://node1:8088/</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/05/22/Spark%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/1653204766544.png"></p>
+</li>
 </ul>
 </li>
 </ul>
@@ -388,7 +397,23 @@
   </div>
   <div class="article-info article-info-index">
     
+    <div class="article-pop-out tagcloud">
+      <i class="icon-tuding"></i>
+      <a class="article-tag-list-link color3">置顶</a>
+    </div>
     
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Spark基础配置</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
@@ -454,7 +479,7 @@
 
 <nav id="article-nav">
   
-    <a href="/2022/05/22/Spark%20local&%20stand-alone%E9%85%8D%E7%BD%AE/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2022/05/22/Spark-local&stand-alone%E9%85%8D%E7%BD%AE/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -612,6 +637,14 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spark</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Spark基础配置</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
