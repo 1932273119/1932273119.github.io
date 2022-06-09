@@ -6,20 +6,31 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://1932273119.github.io">
-  <title>Tag: Spark基础配置 | Hexo</title>
+  <title>Kafka命令行操作 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="Wang yf_技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://1932273119.github.io/tags/Spark%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/index.html">
+  <meta name="description" content="Kafka命令行操作1 创建 topic1kafka-topics.sh --zookeeper node1:2181,node2:2181,node3:2181 --create --replication-factor 3 --partitions 3 --topic test_1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kafka命令行操作">
+<meta property="og:url" content="https://1932273119.github.io/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Wang yf_技术博客">
+<meta property="og:description" content="Kafka命令行操作1 创建 topic1kafka-topics.sh --zookeeper node1:2181,node2:2181,node3:2181 --create --replication-factor 3 --partitions 3 --topic test_1">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://1932273119.github.io/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654748253380.png">
+<meta property="og:image" content="https://1932273119.github.io/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654748314383.png">
+<meta property="og:image" content="https://1932273119.github.io/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654749244422.png">
+<meta property="og:image" content="https://1932273119.github.io/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654749419821.png">
+<meta property="og:image" content="https://1932273119.github.io/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654749489886.png">
+<meta property="og:image" content="https://1932273119.github.io/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654749544669.png">
+<meta property="og:image" content="https://1932273119.github.io/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654749699682.png">
+<meta property="og:image" content="https://1932273119.github.io/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654749720164.png">
+<meta property="article:published_time" content="2022-06-09T04:00:00.000Z">
+<meta property="article:modified_time" content="2022-06-09T05:17:04.484Z">
 <meta property="article:author" content="Wang yf">
-<meta property="article:tag" content="Wang yf_技术博客">
+<meta property="article:tag" content="Kafka命令行操作">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://1932273119.github.io/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654748253380.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -194,65 +205,279 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Kafka命令行操作" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/05/22/Spark%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/" class="archive-article-date">
-        <time datetime="2022-05-22T02:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-22</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2022/05/22/Spark%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/" target="_blank">Spark基础环境配置</a>
   
+    <h1 class="article-title" itemprop="name">
+      Kafka命令行操作
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/" class="archive-article-date">
+        <time datetime="2022-06-09T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-09</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">469字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">2分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h4 id="Kafka命令行操作"><a href="#Kafka命令行操作" class="headerlink" title="Kafka命令行操作"></a>Kafka命令行操作</h4><h5 id="1-创建-topic"><a href="#1-创建-topic" class="headerlink" title="1 创建 topic"></a>1 创建 topic</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kafka-topics.sh --zookeeper node1:2181,node2:2181,node3:2181 --create --replication-factor 3 --partitions 3 --topic test_1</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p><img src="/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654748253380.png" alt="1654748253380"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">--replication-factor 副本数量</span><br><span class="line">--partitions 分区数量</span><br><span class="line">--topic topic 名称</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>手动指定副本的存储位置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kafka-topics.sh --create --topic test_2 --zookeeper node1:2181 --replica-assignment 0:1,1:2</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654748314383.png" alt="1654748314383"></p>
+</li>
+</ul>
+<h5 id="2-删除-topic"><a href="#2-删除-topic" class="headerlink" title="2  删除 topic"></a>2  删除 topic</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kafka-topics.sh --delete --topic tpc_1 --zookeeper node1:2181</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(异步线程去删除)删除 topic,需要一个参数处于启用状态: delete.topic.enable = true,否则删不掉</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-查看-topic"><a href="#3-查看-topic" class="headerlink" title="3 查看 topic"></a>3 查看 topic</h5><ul>
+<li><p>列出当前系统中的所有 topic </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kafka-topics.sh --list --zookeeper node1:2181</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654749244422.png" alt="1654749244422"></p>
+</li>
+<li><p>查看 topic 详细信息</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">kafka-topics.sh --create --topic tpc_1 --zookeeper node1:2181 --replica-assignment 0:1,1:2</span><br><span class="line"></span><br><span class="line">kafka-topics.sh --describe --topic tpc_1 --zookeeper node1:2181 </span><br></pre></td></tr></table></figure></li>
+</ul>
+<h5 id="4-增加分区数"><a href="#4-增加分区数" class="headerlink" title="4 增加分区数"></a>4 增加分区数</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kafka-topics.sh --alter --topic test_2 --partitions 3 --zookeeper node1:2181</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654749419821.png" alt="1654749419821"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Kafka 只支持增加分区,不支持减少分区</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-动态配置-topic-参数"><a href="#5-动态配置-topic-参数" class="headerlink" title="5 动态配置 topic 参数"></a>5 动态配置 topic 参数</h5><ul>
+<li><p>通过管理命令,可以为已创建的 topic 增加、修改、删除 topic level 参数</p>
+</li>
+<li><p>添加、修改配置参数（开启压缩发送传输种提高kafka消息吞吐量的有效办法(‘gzip’, ‘snappy’, ‘lz4’, ‘zstd’)）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kafka-configs.sh --zookeeper node1:2181 --entity-type topics --entity-name tpc_1 --alter --add-config compression.type=gzip </span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654749489886.png" alt="1654749489886"></p>
+</li>
+<li><p>删除配置参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kafka-configs.sh --zookeeper node1:2181 --entity-type topics --entity-name tpc_1 --alter --delete-config compression.type</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654749544669.png" alt="1654749544669"></p>
+</li>
+</ul>
+<h5 id="6-Kafka命令行生产者与消费者操作"><a href="#6-Kafka命令行生产者与消费者操作" class="headerlink" title="6 Kafka命令行生产者与消费者操作"></a>6 Kafka命令行生产者与消费者操作</h5><ul>
+<li><p>生产者:kafka-console-producer</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kafka-console-producer.sh --broker-list node1:9092, node2:9092, node3:9092 --topic tpc_1</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654749699682.png" alt="1654749699682"></p>
+</li>
+<li><p>消费者:kafka-console-consumer</p>
+</li>
+<li><p>消费消息</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kafka-console-consumer.sh --bootstrap-server node1:9092, node2:9092, node3:9092 --topic tpc_1 --from-beginning</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/1654749720164.png" alt="1654749720164"></p>
+</li>
+<li><p>指定要消费的分区,和要消费的起始 offset </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kafka-console-consumer.sh --bootstrap-server node1:9092,node2:9092,node3:9092 --topic tpc_1 --offset 2 --partition 0</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h5 id="7-配置管理-kafka-configs"><a href="#7-配置管理-kafka-configs" class="headerlink" title="7 配置管理 kafka-configs"></a>7 配置管理 kafka-configs</h5><ul>
+<li><p>比如查看 topic 的配置可以按如下方式执行:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kafka-configs.sh zookeeper node1: 2181 --describe --entity-type topics --entity-name tpc_1 </span><br></pre></td></tr></table></figure></li>
+<li><p>比如查看 broker 的动态配置可以按如下方式执行:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kafka-configs.sh zookeeper node1: 2181 --describe --entity-type brokers --entity-name 0 --zookeeper node1:2181</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+    
+
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          Wang yf
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://1932273119.github.io/2022/06/09/Kafka命令行操作/" title="Kafka命令行操作" target="_blank">https://1932273119.github.io/2022/06/09/Kafka命令行操作/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Spark基础配置</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Kafka命令行操作</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+    
 
     
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://1932273119.github.io/2022/06/09/Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+
+<nav id="article-nav">
+  
+    <a href="/2022/06/09/Kafka%E7%94%9F%E4%BA%A7%E8%80%85API%E7%A4%BA%E4%BE%8B/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Kafka生产者API示例
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/06/09/Kafka%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Kafka环境配置</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
           </div>
@@ -293,9 +518,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
